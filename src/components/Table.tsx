@@ -76,7 +76,7 @@ export default function DataTable() {
   const fetchData = React.useCallback(async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URI}/roles?page=${page}&sortField=${sortField}&sortOrder=${sortOrder}&pageSize=10&q=${search}`
+        `${process.env.REACT_APP_BACKEND_URI}/api/roles?page=${page}&sortField=${sortField}&sortOrder=${sortOrder}&pageSize=10&q=${search}`
       );
 
       setState((st) => ({
