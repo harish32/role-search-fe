@@ -1,6 +1,5 @@
 import * as React from "react";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
-import Card from "@mui/material/Card";
 import axios from "axios";
 
 import GlobalFilter from "./GlobalFilter";
@@ -15,7 +14,7 @@ const columns: GridColDef[] = [
   },
   {
     field: "dateLastEdited",
-    headerName: "Age",
+    headerName: "Last edited",
     type: "date",
     flex: 100,
     valueFormatter: (v) => {
